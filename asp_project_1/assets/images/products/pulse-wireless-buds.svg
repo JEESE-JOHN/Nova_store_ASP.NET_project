@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <!-- Background Studio Gradient -->
+    <radialGradient id="bg-grad" cx="50%" cy="50%" r="65%">
+      <stop offset="0%" stop-color="#2e1065"/>
+      <stop offset="50%" stop-color="#1e1b4b"/>
+      <stop offset="100%" stop-color="#090d16"/>
+    </radialGradient>
+
+    <!-- Case Outer Matte Finish -->
+    <linearGradient id="case-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a855f7"/>
+      <stop offset="40%" stop-color="#7e22ce"/>
+      <stop offset="80%" stop-color="#581c87"/>
+      <stop offset="100%" stop-color="#3b0764"/>
+    </linearGradient>
+
+    <!-- Case Inner Well -->
+    <linearGradient id="case-inner" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e1b4b"/>
+      <stop offset="100%" stop-color="#3b0764"/>
+    </linearGradient>
+
+    <!-- Chrome Metallic Highlight -->
+    <linearGradient id="chrome" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="50%" stop-color="#cbd5e1"/>
+      <stop offset="100%" stop-color="#64748b"/>
+    </linearGradient>
+
+    <!-- Earbud Body -->
+    <linearGradient id="bud-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f3e8ff"/>
+      <stop offset="50%" stop-color="#c084fc"/>
+      <stop offset="100%" stop-color="#7e22ce"/>
+    </linearGradient>
+
+    <!-- Drop Shadow Filter -->
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="25" stdDeviation="20" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#bg-grad)"/>
+
+  <g filter="url(#shadow)">
+    <!-- Open Charging Case Base -->
+    <ellipse cx="400" cy="380" rx="190" ry="120" fill="url(#case-grad)"/>
+    <!-- Case Rim Hinge Rim -->
+    <ellipse cx="400" cy="350" rx="180" ry="100" fill="#2e1065"/>
+    <ellipse cx="400" cy="355" rx="170" ry="90" fill="url(#case-inner)"/>
+
+    <!-- Earbud Left Well -->
+    <ellipse cx="320" cy="355" rx="55" ry="38" fill="#1e1b4b" stroke="#581c87" stroke-width="2"/>
+    <circle cx="310" cy="355" r="5" fill="url(#chrome)"/>
+    <circle cx="330" cy="355" r="5" fill="url(#chrome)"/>
+
+    <!-- Earbud Right Well -->
+    <ellipse cx="480" cy="355" rx="55" ry="38" fill="#1e1b4b" stroke="#581c87" stroke-width="2"/>
+    <circle cx="470" cy="355" r="5" fill="url(#chrome)"/>
+    <circle cx="490" cy="355" r="5" fill="url(#chrome)"/>
+
+    <!-- Case Status LED Indicator (Glowing Green) -->
+    <circle cx="400" cy="430" r="5" fill="#22c55e"/>
+    <circle cx="400" cy="430" r="10" fill="#22c55e" opacity="0.3"/>
+
+    <!-- Case Lid (Open backdrop) -->
+    <path d="M 210,360 C 210,190 590,190 590,360 Z" fill="url(#case-grad)" opacity="0.4"/>
+    <path d="M 220,350 C 220,210 580,210 580,350 Z" fill="url(#case-inner)" opacity="0.6"/>
+
+    <!-- Left Earbud (Floats gracefully in focus) -->
+    <g transform="translate(-10, -30)">
+      <!-- Earbud Stem -->
+      <path d="M 280,230 L 290,330 C 290,340 270,340 270,330 L 260,230 Z" fill="url(#bud-grad)"/>
+      <circle cx="280" cy="330" r="3" fill="url(#chrome)"/>
+      <!-- Main Earbud Head -->
+      <ellipse cx="270" cy="220" rx="32" ry="26" fill="url(#bud-grad)"/>
+      <!-- Silicone Tip -->
+      <ellipse cx="248" cy="220" rx="14" ry="18" fill="#f3e8ff"/>
+      <ellipse cx="244" cy="220" rx="6" ry="12" fill="#7e22ce"/>
+      <!-- Touch Sensor / Chrome Ring -->
+      <circle cx="288" cy="220" r="10" fill="url(#chrome)"/>
+    </g>
+
+    <!-- Right Earbud (Floats gracefully in focus) -->
+    <g transform="translate(10, -30)">
+      <!-- Earbud Stem -->
+      <path d="M 520,230 L 510,330 C 510,340 530,340 530,330 L 540,230 Z" fill="url(#bud-grad)"/>
+      <circle cx="520" cy="330" r="3" fill="url(#chrome)"/>
+      <!-- Main Earbud Head -->
+      <ellipse cx="530" cy="220" rx="32" ry="26" fill="url(#bud-grad)"/>
+      <!-- Silicone Tip -->
+      <ellipse cx="552" cy="220" rx="14" ry="18" fill="#f3e8ff"/>
+      <ellipse cx="556" cy="220" rx="6" ry="12" fill="#7e22ce"/>
+      <!-- Touch Sensor / Chrome Ring -->
+      <circle cx="512" cy="220" r="10" fill="url(#chrome)"/>
+    </g>
+
+    <!-- Subtle Glare / Highlight -->
+    <ellipse cx="400" cy="400" rx="160" ry="80" fill="none" stroke="#e9d5ff" stroke-width="1.5" opacity="0.3"/>
+  </g>
+</svg>

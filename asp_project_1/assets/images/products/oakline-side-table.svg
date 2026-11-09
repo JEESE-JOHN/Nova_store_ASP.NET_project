@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <!-- Studio Wall & Floor -->
+    <linearGradient id="bg-wall" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f1f5f9"/>
+      <stop offset="70%" stop-color="#e2e8f0"/>
+      <stop offset="100%" stop-color="#cbd5e1"/>
+    </linearGradient>
+
+    <linearGradient id="floor-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#cbd5e1"/>
+      <stop offset="100%" stop-color="#94a3b8"/>
+    </linearGradient>
+
+    <!-- Natural Oak Top Wood Surface Ring Texture -->
+    <radialGradient id="oak-top" cx="45%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#fde68a"/>
+      <stop offset="40%" stop-color="#f59e0b"/>
+      <stop offset="85%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#b45309"/>
+    </radialGradient>
+
+    <!-- Bevel Under Edge -->
+    <linearGradient id="oak-edge" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#78350f"/>
+    </linearGradient>
+
+    <!-- Leg Wood -->
+    <linearGradient id="oak-leg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#b45309"/>
+      <stop offset="50%" stop-color="#92400e"/>
+      <stop offset="100%" stop-color="#78350f"/>
+    </linearGradient>
+
+    <!-- Ceramic Vase -->
+    <linearGradient id="vase-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="50%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#94a3b8"/>
+    </linearGradient>
+
+    <filter id="table-shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="25" stdDeviation="18" flood-color="#0f172a" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Studio Room Wall & Floor -->
+  <rect width="800" height="420" fill="url(#bg-wall)"/>
+  <rect y="420" width="800" height="180" fill="url(#floor-grad)"/>
+  <line x1="0" y1="420" x2="800" y2="420" stroke="#cbd5e1" stroke-width="2"/>
+
+  <g filter="url(#table-shadow)">
+    <!-- Tripod Legs -->
+    <!-- Back Center Leg -->
+    <polygon points="390,290 410,290 425,540 395,540" fill="#78350f"/>
+
+    <!-- Front Left Leg -->
+    <polygon points="270,290 300,290 240,540 210,540" fill="url(#oak-leg)"/>
+
+    <!-- Front Right Leg -->
+    <polygon points="500,290 530,290 590,540 560,540" fill="url(#oak-leg)"/>
+
+    <!-- Table Edge Bevel (Under-skirt) -->
+    <ellipse cx="400" cy="285" rx="230" ry="85" fill="url(#oak-edge)"/>
+
+    <!-- Table Top Oval Perspective Surface -->
+    <ellipse cx="400" cy="270" rx="230" ry="80" fill="url(#oak-top)"/>
+
+    <!-- Concentric Wood Grain Texture Ellipses -->
+    <ellipse cx="400" cy="270" rx="190" ry="65" fill="none" stroke="#d97706" stroke-width="1.5" opacity="0.4"/>
+    <ellipse cx="400" cy="270" rx="140" ry="48" fill="none" stroke="#d97706" stroke-width="1.5" opacity="0.4"/>
+    <ellipse cx="400" cy="270" rx="80" ry="28" fill="none" stroke="#d97706" stroke-width="1.5" opacity="0.4"/>
+
+    <!-- Decor on Table: Minimalist White Ceramic Vase -->
+    <!-- Vase Shadow on Table -->
+    <ellipse cx="400" cy="240" rx="26" ry="10" fill="#78350f" opacity="0.4"/>
+    
+    <!-- Vase Body -->
+    <path d="M 385,235 C 370,200 375,170 392,160 L 408,160 C 425,170 430,200 415,235 Z" fill="url(#vase-grad)"/>
+    <ellipse cx="400" cy="160" rx="8" ry="3" fill="#cbd5e1"/>
+
+    <!-- Single Dried Eucalyptus Branch in Vase -->
+    <path d="M 400,160 Q 380,100 360,70" fill="none" stroke="#92400e" stroke-width="2.5"/>
+    <ellipse cx="365" cy="75" rx="10" ry="6" transform="rotate(-30 365 75)" fill="#10b981" opacity="0.8"/>
+    <ellipse cx="380" cy="100" rx="12" ry="7" transform="rotate(-20 380 100)" fill="#059669" opacity="0.8"/>
+    <ellipse cx="390" cy="125" rx="11" ry="6" transform="rotate(-15 390 125)" fill="#10b981" opacity="0.8"/>
+  </g>
+</svg>

@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <radialGradient id="bg-grad" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#090d16"/>
+    </radialGradient>
+    
+    <!-- Steel Bezel Gradient -->
+    <linearGradient id="bezel-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#475569"/>
+      <stop offset="25%" stop-color="#1e293b"/>
+      <stop offset="50%" stop-color="#334155"/>
+      <stop offset="75%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#475569"/>
+    </linearGradient>
+
+    <!-- Metallic Rim Accent -->
+    <linearGradient id="accent-rim" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#94a3b8"/>
+      <stop offset="50%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#475569"/>
+    </linearGradient>
+
+    <!-- Dial Sunburst Texture -->
+    <radialGradient id="dial-grad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="70%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </radialGradient>
+
+    <!-- Glass Reflection -->
+    <linearGradient id="glass-glare" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.25"/>
+      <stop offset="30%" stop-color="#ffffff" stop-opacity="0.05"/>
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.0"/>
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0.08"/>
+    </linearGradient>
+
+    <!-- Strap Texture -->
+    <linearGradient id="strap-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="30%" stop-color="#334155"/>
+      <stop offset="50%" stop-color="#1e293b"/>
+      <stop offset="70%" stop-color="#334155"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+
+    <!-- Drop Shadow Filter -->
+    <filter id="drop-shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="25" stdDeviation="20" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#bg-grad)"/>
+
+  <!-- Main Watch Group with Shadow -->
+  <g filter="url(#drop-shadow)">
+    <!-- Watch Strap Top -->
+    <path d="M 330,30 L 470,30 L 455,180 L 345,180 Z" fill="url(#strap-grad)"/>
+    <line x1="330" y1="60" x2="470" y2="60" stroke="#090d16" stroke-width="2" opacity="0.6"/>
+    <line x1="335" y1="90" x2="465" y2="90" stroke="#090d16" stroke-width="2" opacity="0.6"/>
+    <line x1="340" y1="120" x2="460" y2="120" stroke="#090d16" stroke-width="2" opacity="0.6"/>
+    <line x1="343" y1="150" x2="457" y2="150" stroke="#090d16" stroke-width="2" opacity="0.6"/>
+
+    <!-- Watch Strap Bottom -->
+    <path d="M 345,420 L 455,420 L 470,570 L 330,570 Z" fill="url(#strap-grad)"/>
+    <line x1="343" y1="450" x2="457" y2="450" stroke="#090d16" stroke-width="2" opacity="0.6"/>
+    <line x1="340" y1="480" x2="460" y2="480" stroke="#090d16" stroke-width="2" opacity="0.6"/>
+    <line x1="335" y1="510" x2="465" y2="510" stroke="#090d16" stroke-width="2" opacity="0.6"/>
+    <line x1="330" y1="540" x2="470" y2="540" stroke="#090d16" stroke-width="2" opacity="0.6"/>
+
+    <!-- Watch Crown/Buttons -->
+    <rect x="570" y="285" width="18" height="30" rx="3" fill="url(#bezel-grad)"/>
+    <rect x="562" y="235" width="12" height="18" rx="2" fill="url(#bezel-grad)"/>
+    <rect x="562" y="347" width="12" height="18" rx="2" fill="url(#bezel-grad)"/>
+
+    <!-- Case Outer Bezel -->
+    <circle cx="400" cy="300" r="175" fill="url(#bezel-grad)"/>
+    <circle cx="400" cy="300" r="162" fill="#090d16"/>
+    <circle cx="400" cy="300" r="158" fill="url(#accent-rim)"/>
+    <circle cx="400" cy="300" r="154" fill="url(#bezel-grad)"/>
+
+    <!-- Inner Dial Face -->
+    <circle cx="400" cy="300" r="146" fill="url(#dial-grad)"/>
+
+    <!-- Hour Tick Marks -->
+    <!-- 12, 3, 6, 9 main markers -->
+    <rect x="396" y="164" width="8" height="22" rx="2" fill="#f8fafc"/>
+    <rect x="396" y="414" width="8" height="22" rx="2" fill="#f8fafc"/>
+    <rect x="514" y="296" width="22" height="8" rx="2" fill="#f8fafc"/>
+    <rect x="264" y="296" width="22" height="8" rx="2" fill="#f8fafc"/>
+
+    <!-- Other Hour Marks (1,2,4,5,7,8,10,11) -->
+    <rect x="458" y="180" width="5" height="15" rx="1" transform="rotate(30 460 187)" fill="#94a3b8"/>
+    <rect x="503" y="225" width="5" height="15" rx="1" transform="rotate(60 505 232)" fill="#94a3b8"/>
+    <rect x="503" y="360" width="5" height="15" rx="1" transform="rotate(120 505 367)" fill="#94a3b8"/>
+    <rect x="458" y="405" width="5" height="15" rx="1" transform="rotate(150 460 412)" fill="#94a3b8"/>
+    <rect x="337" y="405" width="5" height="15" rx="1" transform="rotate(210 339 412)" fill="#94a3b8"/>
+    <rect x="292" y="360" width="5" height="15" rx="1" transform="rotate(240 294 367)" fill="#94a3b8"/>
+    <rect x="292" y="225" width="5" height="15" rx="1" transform="rotate(300 294 232)" fill="#94a3b8"/>
+    <rect x="337" y="180" width="5" height="15" rx="1" transform="rotate(330 339 187)" fill="#94a3b8"/>
+
+    <!-- Sub-dials -->
+    <circle cx="400" cy="235" r="32" fill="#090d16" stroke="#334155" stroke-width="1.5"/>
+    <circle cx="340" cy="320" r="32" fill="#090d16" stroke="#334155" stroke-width="1.5"/>
+    <circle cx="460" cy="320" r="32" fill="#090d16" stroke="#334155" stroke-width="1.5"/>
+    <!-- Sub-dial needles -->
+    <line x1="400" y1="235" x2="412" y2="225" stroke="#38bdf8" stroke-width="2"/>
+    <line x1="340" y1="320" x2="330" y2="310" stroke="#38bdf8" stroke-width="2"/>
+    <line x1="460" y1="320" x2="472" y2="325" stroke="#38bdf8" stroke-width="2"/>
+
+    <!-- Logo / Brand Text -->
+    <text x="400" y="375" font-family="Inter, sans-serif" font-size="11" font-weight="700" fill="#cbd5e1" text-anchor="middle" letter-spacing="3">CHRONO</text>
+    <text x="400" y="388" font-family="Inter, sans-serif" font-size="8" font-weight="500" fill="#64748b" text-anchor="middle" letter-spacing="1">AUTOMATIC</text>
+
+    <!-- Watch Hands -->
+    <!-- Hour Hand -->
+    <polygon points="400,300 395,300 396,215 400,205 404,215 405,300" fill="#f8fafc"/>
+    <!-- Minute Hand -->
+    <polygon points="400,300 396,300 397,180 400,170 403,180 404,300" fill="#cbd5e1"/>
+    <!-- Second Hand (Red Accent) -->
+    <line x1="400" y1="340" x2="400" y2="165" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round"/>
+    <circle cx="400" cy="300" r="7" fill="#ef4444"/>
+    <circle cx="400" cy="300" r="3" fill="#f8fafc"/>
+
+    <!-- Glass Reflection Overlay -->
+    <circle cx="400" cy="300" r="146" fill="url(#glass-glare)"/>
+  </g>
+</svg>

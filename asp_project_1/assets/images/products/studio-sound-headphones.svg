@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <!-- Background Studio Gradient -->
+    <radialGradient id="bg-grad" cx="50%" cy="50%" r="65%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="60%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </radialGradient>
+
+    <!-- Headband Leather Gradient -->
+    <linearGradient id="headband-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="30%" stop-color="#334155"/>
+      <stop offset="50%" stop-color="#475569"/>
+      <stop offset="70%" stop-color="#334155"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+
+    <!-- Metallic Aluminum Slider -->
+    <linearGradient id="metal-slider" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#cbd5e1"/>
+      <stop offset="50%" stop-color="#64748b"/>
+      <stop offset="100%" stop-color="#334155"/>
+    </linearGradient>
+
+    <!-- Ear Cup Shell Navy -->
+    <radialGradient id="cup-shell" cx="40%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#334155"/>
+      <stop offset="50%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </radialGradient>
+
+    <!-- Cushion Leather -->
+    <linearGradient id="cushion-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#475569"/>
+      <stop offset="50%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+
+    <!-- Metallic Logo Ring -->
+    <linearGradient id="chrome-ring" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#cbd5e1"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+
+    <!-- Drop Shadow Filter -->
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="25" stdDeviation="22" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#bg-grad)"/>
+
+  <g filter="url(#shadow)">
+    <!-- Main Outer Arch Headband -->
+    <path d="M 220,330 C 220,110 580,110 580,330" fill="none" stroke="url(#headband-grad)" stroke-width="46" stroke-linecap="round"/>
+    <!-- Inner Cushion Padding under Headband -->
+    <path d="M 245,320 C 245,140 555,140 555,320" fill="none" stroke="#0f172a" stroke-width="24" stroke-linecap="round"/>
+
+    <!-- Metallic Extension Arms / Sliders -->
+    <!-- Left Arm -->
+    <rect x="210" y="300" width="22" height="70" rx="4" fill="url(#metal-slider)"/>
+    <line x1="215" y1="315" x2="227" y2="315" stroke="#0f172a" stroke-width="2"/>
+    <line x1="215" y1="325" x2="227" y2="325" stroke="#0f172a" stroke-width="2"/>
+    <line x1="215" y1="335" x2="227" y2="335" stroke="#0f172a" stroke-width="2"/>
+
+    <!-- Right Arm -->
+    <rect x="568" y="300" width="22" height="70" rx="4" fill="url(#metal-slider)"/>
+    <line x1="573" y1="315" x2="585" y2="315" stroke="#0f172a" stroke-width="2"/>
+    <line x1="573" y1="325" x2="585" y2="325" stroke="#0f172a" stroke-width="2"/>
+    <line x1="573" y1="335" x2="585" y2="335" stroke="#0f172a" stroke-width="2"/>
+
+    <!-- Left Ear Cup Assembly -->
+    <g transform="translate(150, 320)">
+      <!-- Outer Ear Cushion Foam -->
+      <rect x="0" y="0" width="130" height="175" rx="65" fill="url(#cushion-grad)"/>
+      <!-- Inner Cup Recess -->
+      <rect x="20" y="25" width="90" height="125" rx="45" fill="#090d16"/>
+      <!-- Cup Outer Shell Casing -->
+      <rect x="-15" y="10" width="80" height="155" rx="40" fill="url(#cup-shell)"/>
+      <!-- Metallic Accent Ring -->
+      <circle cx="25" cy="87" r="28" fill="none" stroke="url(#chrome-ring)" stroke-width="3"/>
+      <!-- Acoustic Mesh Grill Dots -->
+      <circle cx="65" cy="87" r="15" fill="#1e293b"/>
+      <text x="25" y="92" font-family="Inter, sans-serif" font-size="14" font-weight="800" fill="#38bdf8" text-anchor="middle">L</text>
+    </g>
+
+    <!-- Right Ear Cup Assembly -->
+    <g transform="translate(520, 320)">
+      <!-- Outer Ear Cushion Foam -->
+      <rect x="0" y="0" width="130" height="175" rx="65" fill="url(#cushion-grad)"/>
+      <!-- Inner Cup Recess -->
+      <rect x="20" y="25" width="90" height="125" rx="45" fill="#090d16"/>
+      <!-- Cup Outer Shell Casing -->
+      <rect x="65" y="10" width="80" height="155" rx="40" fill="url(#cup-shell)"/>
+      <!-- Metallic Accent Ring -->
+      <circle cx="105" cy="87" r="28" fill="none" stroke="url(#chrome-ring)" stroke-width="3"/>
+      <!-- Acoustic Mesh Grill Dots -->
+      <circle cx="65" cy="87" r="15" fill="#1e293b"/>
+      <text x="105" y="92" font-family="Inter, sans-serif" font-size="14" font-weight="800" fill="#38bdf8" text-anchor="middle">R</text>
+    </g>
+
+    <!-- Gold-plated Audio Jack Plug Accent at base -->
+    <path d="M 215,470 Q 210,530 260,545" fill="none" stroke="#0f172a" stroke-width="6"/>
+    <rect x="255" y="538" width="15" height="14" rx="2" fill="url(#metal-slider)"/>
+  </g>
+</svg>

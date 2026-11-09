@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <radialGradient id="bg-grad" cx="50%" cy="50%" r="65%">
+      <stop offset="0%" stop-color="#0f2926"/>
+      <stop offset="60%" stop-color="#061816"/>
+      <stop offset="100%" stop-color="#020b0a"/>
+    </radialGradient>
+
+    <!-- Metallic Teal Frame -->
+    <linearGradient id="frame-teal" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2dd4bf"/>
+      <stop offset="30%" stop-color="#0d9488"/>
+      <stop offset="70%" stop-color="#115e59"/>
+      <stop offset="100%" stop-color="#042f2e"/>
+    </linearGradient>
+
+    <!-- Screen Wallpaper -->
+    <linearGradient id="screen-teal" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#14b8a6"/>
+      <stop offset="40%" stop-color="#06b6d4"/>
+      <stop offset="80%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#1e1b4b"/>
+    </linearGradient>
+
+    <!-- Glass Reflection -->
+    <linearGradient id="screen-glare" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.25"/>
+      <stop offset="25%" stop-color="#ffffff" stop-opacity="0.05"/>
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.0"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.1"/>
+    </linearGradient>
+
+    <!-- Drop Shadow Filter -->
+    <filter id="phone-shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="25" stdDeviation="22" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#bg-grad)"/>
+
+  <!-- Phone Container -->
+  <g filter="url(#phone-shadow)">
+    <!-- Outer Teal Frame -->
+    <rect x="275" y="55" width="250" height="490" rx="42" fill="url(#frame-teal)"/>
+    
+    <!-- Inner Dark Bezel Rim -->
+    <rect x="279" y="59" width="242" height="482" rx="38" fill="#042f2e"/>
+
+    <!-- Screen Area -->
+    <rect x="283" y="63" width="234" height="474" rx="34" fill="url(#screen-teal)"/>
+
+    <!-- Camera Hole -->
+    <circle cx="400" cy="84" r="7" fill="#042f2e"/>
+    <circle cx="400" cy="84" r="3" fill="#0d9488"/>
+
+    <!-- Lockscreen / UI Elements -->
+    <text x="400" y="160" font-family="Inter, sans-serif" font-size="48" font-weight="700" fill="#ffffff" text-anchor="middle">10:08</text>
+    <text x="400" y="185" font-family="Inter, sans-serif" font-size="13" font-weight="500" fill="#ccfbf1" text-anchor="middle">Wed, Aug 12 • 24°C</text>
+
+    <!-- Clean Modern App Grid Icons -->
+    <rect x="305" y="240" width="45" height="45" rx="14" fill="#f43f5e"/>
+    <rect x="360" y="240" width="45" height="45" rx="14" fill="#3b82f6"/>
+    <rect x="415" y="240" width="45" height="45" rx="14" fill="#10b981"/>
+    <rect x="470" y="240" width="45" height="45" rx="14" fill="#f59e0b"/>
+
+    <rect x="305" y="305" width="45" height="45" rx="14" fill="#8b5cf6"/>
+    <rect x="360" y="305" width="45" height="45" rx="14" fill="#ec4899"/>
+    <rect x="415" y="305" width="45" height="45" rx="14" fill="#06b6d4"/>
+    <rect x="470" y="305" width="45" height="45" rx="14" fill="#64748b"/>
+
+    <!-- Music Player Card -->
+    <rect x="305" y="375" width="210" height="75" rx="18" fill="rgba(0, 0, 0, 0.3)" stroke="rgba(255, 255, 255, 0.15)" stroke-width="1"/>
+    <rect x="318" y="388" width="48" height="48" rx="10" fill="#14b8a6"/>
+    <circle cx="342" cy="412" r="10" fill="#ffffff"/>
+    <rect x="378" y="400" width="100" height="8" rx="4" fill="#ffffff"/>
+    <rect x="378" y="416" width="60" height="6" rx="3" fill="#99f6e4"/>
+
+    <!-- Bottom Dock Bar -->
+    <rect x="300" y="472" width="220" height="52" rx="26" fill="rgba(255, 255, 255, 0.2)"/>
+    <circle cx="330" cy="498" r="16" fill="#10b981"/>
+    <circle cx="376" cy="498" r="16" fill="#06b6d4"/>
+    <circle cx="423" cy="498" r="16" fill="#3b82f6"/>
+    <circle cx="470" cy="498" r="16" fill="#8b5cf6"/>
+
+    <!-- Home Bar -->
+    <rect x="355" y="527" width="90" height="4" rx="2" fill="#ffffff"/>
+
+    <!-- Screen Glare -->
+    <rect x="283" y="63" width="234" height="474" rx="34" fill="url(#screen-glare)"/>
+  </g>
+</svg>

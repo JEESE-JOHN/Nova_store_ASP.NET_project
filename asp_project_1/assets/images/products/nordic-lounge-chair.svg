@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <!-- Studio Interior Background -->
+    <linearGradient id="bg-wall" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="70%" stop-color="#e2e8f0"/>
+      <stop offset="100%" stop-color="#cbd5e1"/>
+    </linearGradient>
+
+    <linearGradient id="floor-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#e2e8f0"/>
+      <stop offset="100%" stop-color="#94a3b8"/>
+    </linearGradient>
+
+    <!-- Natural Oak Wood Frame Gradient -->
+    <linearGradient id="oak-wood" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d97706"/>
+      <stop offset="30%" stop-color="#b45309"/>
+      <stop offset="70%" stop-color="#92400e"/>
+      <stop offset="100%" stop-color="#78350f"/>
+    </linearGradient>
+
+    <!-- Cushion Fabric Royal Purple Texture -->
+    <linearGradient id="fabric-purple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7c3aed"/>
+      <stop offset="40%" stop-color="#6d28d9"/>
+      <stop offset="80%" stop-color="#5b21b6"/>
+      <stop offset="100%" stop-color="#4c1d95"/>
+    </linearGradient>
+
+    <!-- Shadow Fabric fold -->
+    <linearGradient id="fold-shadow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4c1d95"/>
+      <stop offset="100%" stop-color="#2e1065"/>
+    </linearGradient>
+
+    <!-- Floor Drop Shadow Filter -->
+    <filter id="floor-shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="20" stdDeviation="15" flood-color="#0f172a" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- Studio Room Wall & Floor -->
+  <rect width="800" height="460" fill="url(#bg-wall)"/>
+  <rect y="460" width="800" height="140" fill="url(#floor-grad)"/>
+  <line x1="0" y1="460" x2="800" y2="460" stroke="#cbd5e1" stroke-width="2"/>
+
+  <g filter="url(#floor-shadow)">
+    <!-- Rear Tapered Wooden Legs -->
+    <!-- Rear Left Leg -->
+    <polygon points="260,390 285,390 250,540 220,540" fill="#78350f"/>
+    <!-- Rear Right Leg -->
+    <polygon points="515,390 540,390 580,540 550,540" fill="#78350f"/>
+
+    <!-- Chair Main Backrest Wooden Outer Shell -->
+    <path d="M 230,370 C 230,170 300,120 400,120 C 500,120 570,170 570,370 Z" fill="url(#oak-wood)"/>
+
+    <!-- Main Backrest Purple Fabric Cushion -->
+    <path d="M 250,370 C 250,190 310,145 400,145 C 490,145 550,190 550,370 Z" fill="url(#fabric-purple)"/>
+
+    <!-- Button Tufting / Cushion Details -->
+    <circle cx="350" cy="220" r="6" fill="#4c1d95"/>
+    <circle cx="450" cy="220" r="6" fill="#4c1d95"/>
+    <circle cx="340" cy="300" r="6" fill="#4c1d95"/>
+    <circle cx="460" cy="300" r="6" fill="#4c1d95"/>
+    <line x1="350" y1="220" x2="450" y2="220" stroke="#4c1d95" stroke-width="1.5" opacity="0.5"/>
+    <line x1="340" y1="300" x2="460" y2="300" stroke="#4c1d95" stroke-width="1.5" opacity="0.5"/>
+
+    <!-- Thick Seat Cushion Plump Base -->
+    <rect x="200" y="370" width="400" height="75" rx="22" fill="url(#fabric-purple)"/>
+    <rect x="205" y="420" width="390" height="20" rx="10" fill="url(#fold-shadow)"/>
+
+    <!-- Front Wooden Legs -->
+    <!-- Front Left Leg -->
+    <polygon points="220,440 250,440 225,565 195,565" fill="url(#oak-wood)"/>
+    <!-- Front Right Leg -->
+    <polygon points="550,440 580,440 605,565 575,565" fill="url(#oak-wood)"/>
+
+    <!-- Sculpted Oak Armrests -->
+    <!-- Left Armrest -->
+    <path d="M 180,350 Q 210,330 280,350 L 270,375 Q 210,360 175,370 Z" fill="url(#oak-wood)"/>
+    <!-- Right Armrest -->
+    <path d="M 620,350 Q 590,330 520,350 L 530,375 Q 590,360 625,370 Z" fill="url(#oak-wood)"/>
+  </g>
+</svg>

@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <!-- Deep Cosmic Space Backdrop -->
+    <radialGradient id="space-grad" cx="50%" cy="40%" r="70%">
+      <stop offset="0%" stop-color="#1e1b4b"/>
+      <stop offset="50%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </radialGradient>
+
+    <!-- Rocket White Hull Gradient -->
+    <linearGradient id="rocket-hull" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="60%" stop-color="#f1f5f9"/>
+      <stop offset="100%" stop-color="#cbd5e1"/>
+    </linearGradient>
+
+    <!-- Orange Thruster & Fins -->
+    <linearGradient id="rocket-orange" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fb923c"/>
+      <stop offset="50%" stop-color="#f97316"/>
+      <stop offset="100%" stop-color="#c2410c"/>
+    </linearGradient>
+
+    <!-- Teal Accents -->
+    <linearGradient id="rocket-teal" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#0284c7"/>
+      <stop offset="100%" stop-color="#0369a1"/>
+    </linearGradient>
+
+    <!-- Glowing Flame Thruster -->
+    <linearGradient id="flame-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a"/>
+      <stop offset="40%" stop-color="#f97316"/>
+      <stop offset="100%" stop-color="#dc2626" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Drop Shadow Filter -->
+    <filter id="rocket-shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="20" stdDeviation="20" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#space-grad)"/>
+
+  <!-- Stars in background -->
+  <circle cx="150" cy="100" r="3" fill="#ffffff" opacity="0.8"/>
+  <circle cx="240" cy="180" r="2" fill="#ffffff" opacity="0.6"/>
+  <circle cx="680" cy="120" r="4" fill="#fde047" opacity="0.9"/>
+  <circle cx="620" cy="240" r="2.5" fill="#ffffff" opacity="0.7"/>
+  <circle cx="120" cy="350" r="3" fill="#ffffff" opacity="0.8"/>
+  <circle cx="700" cy="390" r="3" fill="#ffffff" opacity="0.8"/>
+
+  <!-- Playful Toy Planet -->
+  <circle cx="680" cy="130" r="45" fill="#a855f7" opacity="0.7"/>
+  <ellipse cx="680" cy="130" rx="70" ry="12" transform="rotate(-20 680 130)" fill="none" stroke="#f472b6" stroke-width="4" opacity="0.8"/>
+
+  <g filter="url(#rocket-shadow)">
+    <!-- Rocket Blast Smoke Base Cloud -->
+    <ellipse cx="400" cy="510" rx="140" ry="35" fill="#475569" opacity="0.6"/>
+    <ellipse cx="400" cy="510" rx="90" ry="25" fill="#f97316" opacity="0.4"/>
+
+    <!-- Thruster Flame -->
+    <polygon points="360,430 400,530 440,430" fill="url(#flame-grad)"/>
+
+    <!-- Side Fins -->
+    <!-- Left Fin -->
+    <path d="M 330,340 L 250,450 L 330,430 Z" fill="url(#rocket-orange)"/>
+    <!-- Right Fin -->
+    <path d="M 470,340 L 550,450 L 470,430 Z" fill="url(#rocket-orange)"/>
+
+    <!-- Rocket Main Nose & Body Cone -->
+    <!-- Main Rocket Fuselage -->
+    <path d="M 400,70 C 330,170 330,350 330,430 H 470 C 470,350 470,170 400,70 Z" fill="url(#rocket-hull)"/>
+
+    <!-- Nose Cone Cap (Red/Orange) -->
+    <path d="M 400,70 C 365,120 355,160 355,180 H 445 C 445,160 435,120 400,70 Z" fill="url(#rocket-orange)"/>
+
+    <!-- Rocket Porthole Window 1 (Top) -->
+    <circle cx="400" cy="240" r="35" fill="url(#rocket-teal)" stroke="#cbd5e1" stroke-width="5"/>
+    <circle cx="400" cy="240" r="25" fill="#0f172a"/>
+    <circle cx="392" cy="232" r="6" fill="#ffffff"/>
+
+    <!-- Rocket Porthole Window 2 (Bottom) -->
+    <circle cx="400" cy="330" r="25" fill="url(#rocket-teal)" stroke="#cbd5e1" stroke-width="4"/>
+    <circle cx="400" cy="330" r="18" fill="#0f172a"/>
+    <circle cx="395" cy="325" r="4" fill="#ffffff"/>
+
+    <!-- Stripe Accent Bands -->
+    <rect x="330" y="380" width="140" height="15" fill="url(#rocket-orange)"/>
+    <rect x="330" y="400" width="140" height="10" fill="url(#rocket-teal)"/>
+
+    <!-- Toy Astronaut Mini Figure standing beside rocket -->
+    <g transform="translate(190, 390)">
+      <!-- Suit Body -->
+      <rect x="20" y="40" width="40" height="55" rx="15" fill="#ffffff"/>
+      <!-- Legs -->
+      <rect x="23" y="90" width="14" height="30" rx="6" fill="#ffffff"/>
+      <rect x="43" y="90" width="14" height="30" rx="6" fill="#ffffff"/>
+      <!-- Boots -->
+      <rect x="20" y="115" width="17" height="10" rx="3" fill="#f97316"/>
+      <rect x="43" y="115" width="17" height="10" rx="3" fill="#f97316"/>
+      <!-- Helmet -->
+      <circle cx="40" cy="25" r="24" fill="#ffffff"/>
+      <circle cx="40" cy="25" r="18" fill="#38bdf8"/>
+      <circle cx="35" cy="20" r="5" fill="#ffffff" opacity="0.8"/>
+      <!-- Chest Control Box -->
+      <rect x="30" y="52" width="20" height="16" rx="3" fill="#0284c7"/>
+      <circle cx="35" cy="60" r="3" fill="#ef4444"/>
+      <circle cx="45" cy="60" r="3" fill="#22c55e"/>
+    </g>
+  </g>
+</svg>
